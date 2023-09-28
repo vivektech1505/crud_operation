@@ -22,25 +22,11 @@
       "id": 2
     },
     {
-      "name": "Amrit Kumar",
-      "mobile": 9876543210,
-      "email": "amrit15@gmail.com",
-      "age": 20,
-      "id": 4
-    },
-    {
-      "name": "Aman Kumar Jha",
+      "name": "Aman Kuma",
       "mobile": 9875412360,
       "email": "aman15@gmail.com",
       "age": 32,
       "id": 5
-    },
-    {
-      "name": "Vivek Kumar pal",
-      "mobile": 9973688050,
-      "email": "vivekn1505@gmail.com",
-      "age": 20,
-      "id": 7
     },
     {
       "name": "v pal Kumar123",
@@ -64,7 +50,7 @@
       "id": 20
     },
     {
-      "name": "Sumit Pal",
+      "name": "Sumit Pal sdfasdf",
       "mobile": 9905634725,
       "email": "sumitpal@gmail.com",
       "age": 19,
@@ -90,13 +76,6 @@
       "email": "vivek1505@gmail.com",
       "age": 20,
       "id": 29
-    },
-    {
-      "name": "v pal Kumar15051",
-      "mobile": 9973688050,
-      "email": "vivek1505@gmail.com",
-      "age": 20,
-      "id": 30
     }
   ],
   "profile": {
