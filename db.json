@@ -1,0 +1,105 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "name": "Vivek Kumar pal",
+      "mobile": 9973688050,
+      "email": "vivekn1505@gmail.com",
+      "age": 20,
+      "id": 2
+    },
+    {
+      "name": "Amrit Kumar",
+      "mobile": 9876543210,
+      "email": "amrit15@gmail.com",
+      "age": 20,
+      "id": 4
+    },
+    {
+      "name": "Aman Kumar Jha",
+      "mobile": 9875412360,
+      "email": "aman15@gmail.com",
+      "age": 32,
+      "id": 5
+    },
+    {
+      "name": "Vivek Kumar pal",
+      "mobile": 9973688050,
+      "email": "vivekn1505@gmail.com",
+      "age": 20,
+      "id": 7
+    },
+    {
+      "name": "v pal Kumar123",
+      "mobile": 9973688050,
+      "email": "vivek1505@gmail.com",
+      "age": 20,
+      "id": 17
+    },
+    {
+      "name": "v pal Kumar1234",
+      "mobile": 9973688050,
+      "email": "vivek1505@gmail.com",
+      "age": 20,
+      "id": 19
+    },
+    {
+      "name": "v pal Kumar12345",
+      "mobile": 9973688050,
+      "email": "vivek1505@gmail.com",
+      "age": 20,
+      "id": 20
+    },
+    {
+      "name": "Sumit Pal",
+      "mobile": 9905634725,
+      "email": "sumitpal@gmail.com",
+      "age": 19,
+      "id": 26
+    },
+    {
+      "name": "Vivek Kumar pal",
+      "mobile": 9973688050,
+      "email": "vivekn1505@gmail.com",
+      "age": 20,
+      "id": 27
+    },
+    {
+      "name": "Ajit Kumar",
+      "mobile": 9874563210,
+      "email": "ajit1505@gmail.com",
+      "age": 20,
+      "id": 28
+    },
+    {
+      "name": "v pal Kumar1505",
+      "mobile": 9973688050,
+      "email": "vivek1505@gmail.com",
+      "age": 20,
+      "id": 29
+    },
+    {
+      "name": "v pal Kumar15051",
+      "mobile": 9973688050,
+      "email": "vivek1505@gmail.com",
+      "age": 20,
+      "id": 30
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

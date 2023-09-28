@@ -1,0 +1,99 @@
+<!-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">Add User</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">User List</button>
+        </li>
+    
+
+    </ul> -->
+<div class="container vivek">
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+        <li [ngbNavItem]="1">
+            <button ngbNavLink id="addUser">Add User</button>
+            <ng-template ngbNavContent>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+                            <div class="row mt-2 d-flex">
+                                <div class="form-group col-md-6">
+                                    <label for="formGroupExampleInput">Name</label>
+                                    <input type="text" class="form-control" name="name" formControlName="name"
+                                        placeholder="Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="formGroupExampleInput2">Mobile No</label>
+                                    <input type="number" class="form-control" name="mobile" formControlName="mobile"
+                                        placeholder="Mobile No">
+                                </div>
+                            </div>
+                            <div class="row mt-2 d-flex">
+                                <div class="form-group col-md-6">
+                                    <label for="formGroupExampleInput">Email</label>
+                                    <input type="email" class="form-control" name="email" formControlName="email"
+                                        placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="formGroupExampleInput2">Age</label>
+                                    <input type="number" class="form-control" name="age" formControlName="age"
+                                        placeholder="Age">
+                                </div>
+                            </div>
+                            <div class="row mt-3 d-flex btns">
+                                <div class="col-md-6">
+                                    <button type="submit" class="btn btn-primary">Add </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="reset" class="btn btn-secondary">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </ng-template>
+        </li>
+        <li [ngbNavItem]="2">
+            <button ngbNavLink id="userList">User List</button>
+            <ng-template ngbNavContent>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Mobile No</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Handler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of users; i :index">
+                            <th scope="row">{{item.id}}</th>
+                            <td>{{item.name}}</td>
+                            <td>{{item.mobile}}</td>
+                            <td>{{item.email}}</td>
+                            <td>{{item.age}}</td>
+                            <td>
+                                <button type="button" (click)="deleteConformation(item.id)"
+                                    class="btn btn-danger hello">Delete</button>
+                                <button type="button" (click)="editUserById(item.id)"
+                                    class="btn btn-primary hello">Edit</button>
+
+                                    <!-- <a [routerLink]="['/user']"  [queryParams]="{id: item.id}"
+                                    class="btn btn-primary hello">Edit</a> -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ng-template>
+        </li>
+    </ul>
+
+    <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+
+</div>
